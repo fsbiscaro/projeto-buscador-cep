@@ -61,18 +61,19 @@
 }
 
 .main{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- background-color: #fff;
- width: 500px;
- border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    min-height: 250px;
+    border-radius: 8px;
 }
 
 .main h2{
-    margin: 16px 0;
-    font-size: 39px;
+    margin: 16px 0;  
+    font-size: 28px;
 }
 
 .main span{
@@ -86,12 +87,5 @@
     }
 }
 
-.main h2{
-    font-size: 28px;
 
-}
 
-.main{
-    width: 80%;
-    min-height: 250px;
-}
