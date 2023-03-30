@@ -19,7 +19,6 @@ function App() {
 
         <main className="main">
           <h2>CEP: 79003222</h2>
-
           <span>Rua Teste</span>
           <span>Complemento: </span>
           <span>Vila Rosa </span>
