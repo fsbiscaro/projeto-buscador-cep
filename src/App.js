@@ -2,16 +2,31 @@ import { useState } from 'react';
 import React, { Component }  from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './styles.css';
- 
+import api from "./services/api";
+
+
 function App() {
 
   const [input, setInput] = useState('')
 
-  function handleSearch(){
-    alert("Valor do Input " + input)
-  }
+  async function handleSearch(){
 
+    if(input === ''){
+      alert("Preencha algum cep!")
+      return;
+    }
   
+  
+  try{
+    const response = await api.get(`${input}/json`);
+    console.log(response)
+  }catch{
+      alert("Ops! erro ao buscar CEP...")
+  }
+  
+}
+
+
   return (
     <div className="container">
       <h1 className="title">Buscador CEP</h1>
